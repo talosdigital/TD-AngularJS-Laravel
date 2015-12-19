@@ -1,0 +1,80 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "TD AngularJS-Laravel",
+        "version": "1.0"
+    },
+    "paths": {
+        "/api/v1/auth/login": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Authenticate an user",
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "required": true,
+                        "schema": "",
+                        "type": "string",
+                        "default": "\n    {\n    \"email\":\"ignacio@example.com\",\n    \"password\":\"test4echo\"\n    }"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/v1/auth/current": {
+            "get": {
+                "tags": [
+                    "Auth"
+                ],
+                "summary": "Retrieve current authenticated user",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        },
+        "/api/v1/user": {
+            "get": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "List users",
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "User"
+                ],
+                "summary": "Create a new user",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "body",
+                        "required": true,
+                        "schema": "",
+                        "type": "string",
+                        "default": "\n    {\"firstname\":\"Ignacio\",\n     \"lastname\":\"Pascual\",\n    \"password\":\"test4echo\",\n    \"email\":\"ignacio@example.com\"\n    }"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": ""
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {}
+}
