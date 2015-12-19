@@ -4,6 +4,14 @@ TD AngularJS-Laravel is a full stack application to speed up projects using Lara
 
 This has been created focus to follow the best practices on both platforms.
 
+### Features
+
+
+- JWTs provider, this is a middleware for API authentication.
+- CSRF token verification turned off, we’re using JWTs in a stateless manner.
+- Swagger Integrated with (swaggervel).
+
+
 ## Installation
 
 Composer
@@ -17,7 +25,7 @@ php composer.phar install
 Config
 
 ```
-cp .env.sample .env
+cp .env.example .env
 vi .env
 DB_HOST=localhost
 DB_DATABASE=laravel
@@ -37,12 +45,13 @@ JWT key
 php artisan jwt:generate
 ```
 
-### Feature
+## Demo
 
-
-- JWTs provider, this is a middleware for API authentication.
-- CSRF token verification turned off, we’re using JWTs in a stateless manner.
-- Swagger Integrated with (swaggervel).
+1. Open http://local.tdangularjslaravel.com/api-docs
+2. User > Create a new user (POST)
+3. Auth > Authenticate an user (login POST)
+4. Copy Token to the Navigation bar input, click Explore
+5. User > List users (GET)
 
 
 
