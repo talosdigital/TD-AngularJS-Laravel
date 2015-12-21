@@ -34,6 +34,7 @@
                 font-size: 96px;
             }
         </style>
+        <script type="text/javascript" src="/scripts/script.js"></script>
     </head>
     <body>
         <div class="container">
