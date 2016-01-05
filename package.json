@@ -42,7 +42,6 @@
     "time-grunt": "1.0.0"
   },
   "dependencies": {
-    "bootstrap-sass": "3.0.0",
     "laravel-elixir": "3.0.0"
   }
 }

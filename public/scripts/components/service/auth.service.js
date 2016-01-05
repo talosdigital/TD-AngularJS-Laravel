@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('TDAngularJSLaravel')
-	.service('authService', function($http, $state, localStorageService) {
+	.service('authService', function($http, localStorageService) {
 		
 		var prefix = 'api/v1/auth';
 

@@ -9,7 +9,9 @@
     "angular-cookies": "~1.4.8",
     "angular-local-storage": "~0.2.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "angular-mocks": "~1.4.8"
+  },
   "appPath": "public",
   "moduleName": "TDAngularJSLaravel"
 }
