@@ -1,15 +1,24 @@
-<div>
-	<input type="text" placeholder="First Name" ng-model="signup.user.firstname" requiered>
-</div>
-<div>
-	<input type="text" placeholder="Last Name" ng-model="signup.user.lastname" requiered>
-</div>
-<div>
-	<input type="text" placeholder="Email" ng-model="signup.user.email" requiered>
-</div>
-<div>
-	<input type="password" placeholder="Password" ng-model="signup.user.password" requiered>
-</div>
-<div>
-	<button ng-click="signup.signup()">Login</button>
+<div class="container">
+	<form class="form-signin row">
+		<div class="col-md-6 col-md-offset-3">
+			<h2 class="form-signin-heading">Please sign up</h2>
+			<div class="form-group">
+				<label for="firstName" class="sr-only">First Name</label>
+				<input type="text" id="firstName" class="form-control" placeholder="First Name" ng-model="signup.user.firstname" required autofocus>
+			</div>
+			<div class="form-group">
+				<label for="lastName" class="sr-only">Last Name</label>
+				<input type="text" id="lastName" class="form-control" placeholder="Last Name" ng-model="signup.user.lastname" required>
+			</div>
+			<div class="form-group">
+				<label for="inputEmail" class="sr-only">Email address</label>
+				<input type="email" id="inputEmail" class="form-control" placeholder="Email address" ng-model="signup.user.email" required>
+			</div>
+			<div class="form-group">
+				<label for="inputPassword" class="sr-only">Password</label>
+				<input type="password" id="inputPassword" class="form-control" placeholder="Password" ng-model="signup.user.password" required>
+			</div>
+			<button class="btn btn-lg btn-primary btn-block" ng-click="signup.signup()">Sign up</button>
+		</div>
+	</form>
 </div>
