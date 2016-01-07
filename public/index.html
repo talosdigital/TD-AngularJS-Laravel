@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<base href="/">
+<title>TD-AngularJS-Laravel</title>
+<meta name="description" content="">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="x-ua-compatible" content="IE=edge" />
+<!-- build:css({.tmp,public}) styles/vendor.css -->
+<!-- bower:css -->
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:css({.tmp,public}) styles/main.css -->
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+<!-- injector:css -->
+<link rel="stylesheet" href="styles/main.css">
+<!-- endinjector -->
+<!-- endbuild -->
+
+</head>
+<body ng-app="TDAngularJSLaravel">
+
+	<!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+	<div ui-view=""></div>
+
+	<!-- build:js({.tmp,public}) scripts/vendor.js -->
+
+	<!-- bower:js -->
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="bower_components/angular-touch/angular-touch.js"></script>
+	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+	<script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<!-- endbower -->
+	<!--PUT MANUALLY THE LOCAL FILES HERE!-->
+	<!--PUT MANUALLY THE LOCAL FILES HERE!-->
+	<!-- endbuild -->
+
+	<!-- build:js({.tmp,public}) scripts/scripts.js -->
+	<!-- injector:js -->
+	<script src="scripts/app.js"></script>
+	<script src="scripts/angular-constants.js"></script>
+	<script src="scripts/auth/login/login.controller.js"></script>
+	<script src="scripts/auth/signup/signup.controller.js"></script>
+	<script src="scripts/components/service/auth.service.js"></script>
+	<script src="scripts/components/service/user.service.js"></script>
+	<script src="scripts/dashboard/dashboar.controller.js"></script>
+	<script src="scripts/home/home.controller.js"></script>
+	<!-- endinjector -->
+	<!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,17 @@
+<div class="container">
+	<form class="form-signin row">
+		<h2 class="form-signin-heading">Please sign up</h2>
+		<label for="firstName" class="sr-only">First Name</label>
+		<input type="text" id="firstName" class="form-control" placeholder="First Name" ng-model="signup.user.firstname" required autofocus>
+		<label for="lastName" class="sr-only">Last Name</label>
+		<input type="text" id="lastName" class="form-control" placeholder="Last Name" ng-model="signup.user.lastname" required>
+		<label for="inputEmail" class="sr-only">Email address</label>
+		<input type="email" id="inputEmail" class="form-control" placeholder="Email address" ng-model="signup.user.email" required>
+		<label for="inputPassword" class="sr-only">Password</label>
+		<input type="password" id="inputPassword" class="form-control" placeholder="Password" ng-model="signup.user.password" required>
+		<button class="btn btn-lg btn-primary btn-block" ng-click="signup.signup()">Sign up</button>
+	</form>
+	<footer class="footer">
+		<p>© 2015 Company, Inc.</p>
+	</footer>
+</div>
